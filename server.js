@@ -31,11 +31,11 @@ const server = app.listen(port, (err) => {
   socket(server);
 });
 
-process.on('unhandledRejection', (err) => {
-  console.log(err);
-  console.log('UNHANDLED REJECTION-->shutting down');
-  // first finish all the request
-  server.close(() => {
-    process.exit(1);
-  });
-});
+// process.on('unhandledRejection', (err) => {
+//   console.log(err);
+//   console.log('UNHANDLED REJECTION-->shutting down');
+//   // first finish all the request
+//   server.close(() => {
+//     process.exit(1);
+//   });
+// });
