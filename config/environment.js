@@ -12,7 +12,7 @@ const development = {
 const production = {
   port: 8080,
   name: 'production',
-  db: process.env.MONGO_UR,
+  db: process.env.MONGO_URL,
   jwt_secret: process.env.JWT_SECRET,
 };
 
